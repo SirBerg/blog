@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/About.astro';
+---
+
+<Layout
+        title="License"
+        description="TLDR: No Data is collected"
+        pubDate={new Date('August 17 2023')}
+        heroImage="/privacy.png"
+>
+    All of this Website is Open Source and comes with <b>no warranty</b>.
+    If you decide to use any of it, please follow the GPLv3.
+    The License is appended by this Statement:
+    <p>
+        In the case that you modify any of the Articles, in any way, you may not cite me as the Author and you must point out the modified parts of the article in a way so that it is clear to the reader.
+    </p>
+    <p>
+        Basically: I do not want any words put in my Mouth in the case that you use one of my articles :)
+    </p>
+    <p>
+        You may also find this License <a href="/gplv3.txt">here</a>
+    </p>
+    <div height="250px" width="100%" style="margin-top:-30px">
+        <iframe src="/gplv3.txt" title="license" width="100%" height="200px" style="border:none;">
+        ></iframe>
+    </div>
+</Layout>

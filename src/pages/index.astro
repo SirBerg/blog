@@ -1,0 +1,53 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { ViewTransitions} from "astro:transitions";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<ViewTransitions />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<div class="indexImage">
+					<b style="font-size:11vh; background-image: none;">sirberg. tokyo</b>
+			</div>
+			<h1>Hello there!</h1>
+			<p>
+				Welcome to my Blog. This is just a bit of a "brain dump" for me, don't expect highly spellchecked articles.
+				I don't have a schedule for this or any plan at all.
+			</p>
+			<h3>What's this about?</h3>
+				I wanted to write a blog. I feel like I should probably start doing more creative stuff, rather than just consume
+				Youtube Videos all day. As for what this Blog is about: I don't know, stuff that I really like I guess
+				(So probably Video Games and Computer Stuff).
+			<h3>A few links to get you started</h3>
+			<ul>
+				<li>
+					You can find information about me on the <a href="/about">About</a> Page
+				</li>
+				<li>
+					If you'd like to jump in to the Blog Posts, you can find that <a href="/blog">here</a>
+				</li>
+				<li>
+					All of this Website (including the Blog Posts) are Open Source and available in this <a href="https://github.com/SirBerg/blog">Github Repo</a>
+				</li>
+				<li>
+					This page uses the Default Blog Template from <a href="https://astro.build">Astro</a> (I did modify it a bit)
+				</li>
+			</ul>
+			<h3>
+				Contributing
+			</h3>
+			If you'd like to contribute an Article to this blogpost, please go to the <a href="https://github.com/SirBerg/blog">Github Repository</a> and create a Pull Request with the Markdown File and a Hero Image.
+			I will read through the Article first to confirm if it is okay to publish and then I'll put up your post.
+		</main>
+		<Footer />
+	</body>
+</html>
