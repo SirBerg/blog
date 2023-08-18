@@ -3,14 +3,13 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { ViewTransitions} from "astro:transitions";
+//import { ViewTransitions} from "astro:transitions";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<ViewTransitions />
 		<!-- Yes I know... wanna fight me about it? -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE4DEGC27K"></script>
 		<script>
@@ -42,7 +41,7 @@ import { ViewTransitions} from "astro:transitions";
 					You can find information about me on the <a href="/about">About</a> Page
 				</li>
 				<li>
-					If you'd like to jump in to the Blog Posts, you can find that <a href="/blog">here</a>
+					If you'd like to jump in to the Blog Posts, you can find that <a href="/blog">on the Blog Post site</a>
 				</li>
 				<li>
 					All of this Website (including the Blog Posts) are Open Source and available in this <a href="https://github.com/SirBerg/blog">Github Repo</a>

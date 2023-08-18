@@ -7,7 +7,4 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://sirberg.tokyo',
 	integrations: [mdx(), sitemap()],
-	experimental: {
-		viewTransitions: true
-	}
 });
